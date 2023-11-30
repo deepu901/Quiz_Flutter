@@ -1,22 +1,7 @@
-import 'package:demo_quiz/start_screen.dart';
+import 'package:demo_quiz/quiz.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 107, 3, 126),
-                Color.fromARGB(255, 198, 5, 232)
-              ],
-            ),
-          ),
-          child: const StartScreen(),
-        ),
-      ),
-    ),
-  );
+      const Quiz()); //calling quiz file to run app where all previous data are stored to make button running
 }
